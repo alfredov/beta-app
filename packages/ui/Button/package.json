@@ -1,0 +1,34 @@
+{
+  "name": "@bits-x/button",
+  "version": "1.0.0",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "src/index.ts",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "version": "yarn version",
+    "publish:stable": "npm publish --tolerate-republish --access public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0",
+    "react-native": "^0.66.4"
+  },
+  "sideEffects": false,
+  "homepage": "https://random-ui.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectx/random-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/projectx/random-ui/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  }
+}
