@@ -3,19 +3,24 @@ import {
   TouchableOpacity,
   TouchableOpacityProps,
   StyleSheet,
+  StyleProp,
+  ViewStyle,
 } from 'react-native';
 
 import SendIcon from './SendIcon';
 
 type AsIcon = 'send';
-export type Props = TouchableOpacityProps & { as?: AsIcon };
+export type Props = TouchableOpacityProps & {
+  as?: AsIcon;
+  style?: StyleProp<ViewStyle>;
+};
 
 const getIcon = (icon: AsIcon) => (icon === 'send' ? <SendIcon /> : null);
 
-const IconButton = ({ children, as, disabled, ...props }: Props) => (
+const IconButton = ({ style, children, as, disabled, ...props }: Props) => (
   <TouchableOpacity
     disabled={disabled}
-    style={[styles.button, disabled && styles.disabled]}
+    style={[styles.button, disabled && styles.disabled, style]}
     {...props}>
     {as ? getIcon(as) : children}
   </TouchableOpacity>
