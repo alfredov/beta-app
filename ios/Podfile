@@ -1,6 +1,8 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
+pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
 platform :ios, '11.0'
 
 target 'BetaApp' do

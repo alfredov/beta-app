@@ -2,7 +2,8 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "paths": {
-      "@bits-x/button": ["./packages/ui/Button/src"]
+      "@bits-x/button": ["./packages/ui/Button/src"],
+      "@bits-x/icon-button": ["./packages/ui/IconButton/src"]
     }
   }
 }

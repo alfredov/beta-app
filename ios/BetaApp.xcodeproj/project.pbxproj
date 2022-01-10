@@ -33,6 +33,20 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = BetaApp;
 		};
+		3847123E278BED9D00486E36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38471239278BED9D00486E36 /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = RNSVG;
+		};
+		38471240278BED9D00486E36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38471239278BED9D00486E36 /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94DDAC5C1F3D024300EED511;
+			remoteInfo = "RNSVG-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +60,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BetaApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BetaApp/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-BetaApp-BetaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaApp-BetaAppTests.release.xcconfig"; path = "Target Support Files/Pods-BetaApp-BetaAppTests/Pods-BetaApp-BetaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		38471239278BED9D00486E36 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/apple/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		3863D8E5278B9A59009E2D2F /* SanFranciscoDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Regular.otf"; path = "../../../../Library/Fonts/SanFranciscoDisplay-Regular.otf"; sourceTree = "<group>"; };
 		3863D8E6278B9A59009E2D2F /* SanFranciscoDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Ultralight.otf"; path = "../../../../Library/Fonts/SanFranciscoDisplay-Ultralight.otf"; sourceTree = "<group>"; };
 		3863D8E7278B9A59009E2D2F /* SanFranciscoDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Bold.otf"; path = "../../../../Library/Fonts/SanFranciscoDisplay-Bold.otf"; sourceTree = "<group>"; };
@@ -125,6 +140,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3847123A278BED9D00486E36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3847123F278BED9D00486E36 /* libRNSVG.a */,
+				38471241278BED9D00486E36 /* libRNSVG-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3863D8E4278B9956009E2D2F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +168,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				38471239278BED9D00486E36 /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -257,6 +282,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3847123A278BED9D00486E36 /* Products */;
+					ProjectRef = 38471239278BED9D00486E36 /* RNSVG.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* BetaApp */,
@@ -264,6 +295,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3847123F278BED9D00486E36 /* libRNSVG.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSVG.a;
+			remoteRef = 3847123E278BED9D00486E36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38471241278BED9D00486E36 /* libRNSVG-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSVG-tvOS.a";
+			remoteRef = 38471240278BED9D00486E36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {

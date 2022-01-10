@@ -27,11 +27,11 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import {Button} from '@bits-x/button';
+import { IconButton } from '@bits-x/icon-button';
 
 const Section: React.FC<{
   title: string;
-}> = ({children, title}) => {
+}> = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -71,7 +71,9 @@ const App = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
-        <Button variant="error">Crear cuenta</Button>
+        <IconButton onPress={() => {}}>
+          <Text>🦄</Text>
+        </IconButton>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
