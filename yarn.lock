@@ -1079,12 +1079,34 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@bits-x/chat@workspace:packages/ui/Chat":
+  version: 0.0.0-use.local
+  resolution: "@bits-x/chat@workspace:packages/ui/Chat"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+  peerDependencies:
+    react: ^16.8 || ^17.0
+    react-native: ^0.66.4
+  languageName: unknown
+  linkType: soft
+
 "@bits-x/icon-button@workspace:packages/ui/IconButton":
   version: 0.0.0-use.local
   resolution: "@bits-x/icon-button@workspace:packages/ui/IconButton"
   dependencies:
     "@babel/runtime": ^7.12.5
     react-native-svg: ^12.1.1
+  peerDependencies:
+    react: ^16.8 || ^17.0
+    react-native: ^0.66.4
+  languageName: unknown
+  linkType: soft
+
+"@bits-x/text-input@workspace:packages/ui/TextInput":
+  version: 0.0.0-use.local
+  resolution: "@bits-x/text-input@workspace:packages/ui/TextInput"
+  dependencies:
+    "@babel/runtime": ^7.12.5
   peerDependencies:
     react: ^16.8 || ^17.0
     react-native: ^0.66.4

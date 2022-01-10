@@ -27,7 +27,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { TextInput } from '@bits-x/text-input';
+import { Chat } from '@bits-x/chat';
 
 const Section: React.FC<{
   title: string;
@@ -67,6 +67,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <Chat />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
@@ -78,7 +79,6 @@ const App = () => {
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
-            <TextInput variant="inline" placeholder="Nombre de usuario" />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
