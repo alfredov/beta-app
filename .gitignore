@@ -68,3 +68,4 @@ buck-out/
 !.yarn/versions
 .pnp.*
 dist
+.parcel-cache
