@@ -11,6 +11,8 @@ $ npm install @bits-x/button
 ```js
 import { Button, Props } from '@bits-x/button'
 
-<Button variant="error">Logout</Button>
-<Button>Log in</Button>
+<View>
+  <Button variant="error">Logout</Button>
+  <Button>Log in</Button>
+</View>
 ```
