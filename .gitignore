@@ -59,6 +59,10 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
 # Yarn 2 build artifacts
 # https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
 .yarn/*
@@ -68,4 +72,3 @@ buck-out/
 !.yarn/versions
 .pnp.*
 dist
-
