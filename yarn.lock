@@ -1084,13 +1084,15 @@ __metadata:
   resolution: "@bits-x/chat@workspace:packages/ui/Chat"
   dependencies:
     "@babel/runtime": ^7.12.5
+    "@bits-x/icon-button": "workspace:*"
+    "@bits-x/text-input": "workspace:*"
   peerDependencies:
     react: ^16.8 || ^17.0
     react-native: ^0.66.4
   languageName: unknown
   linkType: soft
 
-"@bits-x/icon-button@workspace:packages/ui/IconButton":
+"@bits-x/icon-button@workspace:*, @bits-x/icon-button@workspace:packages/ui/IconButton":
   version: 0.0.0-use.local
   resolution: "@bits-x/icon-button@workspace:packages/ui/IconButton"
   dependencies:
@@ -1102,7 +1104,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bits-x/text-input@workspace:packages/ui/TextInput":
+"@bits-x/text-input@workspace:*, @bits-x/text-input@workspace:packages/ui/TextInput":
   version: 0.0.0-use.local
   resolution: "@bits-x/text-input@workspace:packages/ui/TextInput"
   dependencies:
