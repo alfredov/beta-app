@@ -13,6 +13,6 @@ import { Button, Props } from '@bits-x/button'
 
 <View>
   <Button variant="error">Logout</Button>
-  <Button>Log in</Button>
+  <Button onPress={() => {}}>Log in</Button>
 </View>
 ```

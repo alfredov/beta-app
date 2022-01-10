@@ -1,6 +1,6 @@
 {
   "name": "@bits-x/button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "src/index.ts",
@@ -23,10 +23,10 @@
   "homepage": "https://random-ui.vercel.app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/projectx/random-ui.git"
+    "url": "git+https://github.com/alfredov/beta-app.git"
   },
   "bugs": {
-    "url": "https://github.com/projectx/random-ui/issues"
+    "url": "https://github.com/alfredov/beta-app/issues"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5"
