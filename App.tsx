@@ -27,7 +27,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { IconButton } from '@bits-x/icon-button';
+import { TextInput } from '@bits-x/text-input';
 
 const Section: React.FC<{
   title: string;
@@ -71,9 +71,6 @@ const App = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
-        <IconButton onPress={() => {}}>
-          <Text>🦄</Text>
-        </IconButton>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -81,6 +78,7 @@ const App = () => {
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
+            <TextInput variant="inline" placeholder="Nombre de usuario" />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />

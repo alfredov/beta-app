@@ -3,7 +3,8 @@
   "compilerOptions": {
     "paths": {
       "@bits-x/button": ["./packages/ui/Button/src"],
-      "@bits-x/icon-button": ["./packages/ui/IconButton/src"]
+      "@bits-x/icon-button": ["./packages/ui/IconButton/src"],
+      "@bits-x/text-input": ["./packages/ui/TextInput/src"]
     }
   }
 }
