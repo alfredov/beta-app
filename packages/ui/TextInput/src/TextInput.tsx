@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     paddingLeft: 24,
     paddingRight: 24,
+    flex: 1,
   },
   shadow: {
     shadowColor: '#00000043',
