@@ -10,7 +10,7 @@ export type Props = TouchableOpacityProps & {
   variant?: 'primary' | 'error';
 };
 
-const Button = ({children, variant = 'primary', ...props}: Props) => (
+const Button = ({ children, variant = 'primary', ...props }: Props) => (
   <TouchableOpacity
     style={[styles.button, variant === 'error' && styles.errorBackgroundColor]}
     {...props}>
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export {Button};
+export { Button };
