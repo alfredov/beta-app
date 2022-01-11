@@ -4,6 +4,7 @@ import { createStore, Store } from 'redux';
 import { createRootReducer, RootState } from './reducer';
 import { RootAction } from './actions';
 import { createRootEpic } from './epics';
+import { getEnhancers } from './getEnhancers';
 
 export type ApplicationStore = Store<RootState, RootAction>;
 
@@ -16,8 +17,13 @@ export default (
   epicMiddleWare: any;
 } => {
   const epicMiddleWare = createEpicMiddleware<any, any, any>();
+  const enhancers = getEnhancers(epicMiddleWare);
 
-  const store = createStore(createRootReducer(reducers), initialState);
+  const store = createStore(
+    createRootReducer(reducers),
+    initialState,
+    enhancers
+  );
 
   epicMiddleWare.run(createRootEpic(epics));
 
