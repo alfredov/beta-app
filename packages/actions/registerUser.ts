@@ -1,6 +1,6 @@
 import { ActionType, createAsyncAction } from 'typesafe-actions';
 
-export type TRequest = { email: string };
+export type TRequest = { email: string; username: string };
 export type TResponse = { id: number };
 
 const action = createAsyncAction(

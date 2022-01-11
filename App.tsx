@@ -9,14 +9,15 @@ import { Provider } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
 import { setup } from '@bits-x/redux-setup';
 
-import { Root } from './navigation';
+import { Root, navigationRef } from './navigation';
 import { registerReducer } from './packages/reducer';
+import epics from './packages/epics';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
-  const { store } = setup({}, [registerReducer], []);
+  const { store } = setup({}, [registerReducer], epics);
   return (
-    <NavigationContainer>
+    <NavigationContainer ref={navigationRef}>
       <SafeAreaView style={styles.container}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <Provider store={store}>
