@@ -3,14 +3,19 @@ import {
   TextInput as PrimitiveTextInput,
   TextInputProps,
   StyleSheet,
+  StyleProp,
+  ViewStyle,
 } from 'react-native';
 
-export type Props = TextInputProps & { variant?: 'inline' };
+export type Props = TextInputProps & {
+  variant?: 'inline';
+  style?: StyleProp<ViewStyle>;
+};
 
-const TextInput = ({ variant, ...props }: Props) => (
+const TextInput = ({ style, variant, ...props }: Props) => (
   <PrimitiveTextInput
     placeholderTextColor={variant === 'inline' ? '#4B5959' : '#00000075'}
-    style={[styles.input, variant === 'inline' && styles.shadow]}
+    style={[styles.input, variant === 'inline' && styles.shadow, style]}
     {...props}
   />
 );
@@ -26,7 +31,6 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     paddingLeft: 24,
     paddingRight: 24,
-    flex: 1,
   },
   shadow: {
     shadowColor: '#00000043',
