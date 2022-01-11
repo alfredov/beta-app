@@ -73,6 +73,7 @@ const Chat = (props: ChatProps) => {
       />
       <View style={styles.footer}>
         <TextInput
+          style={styles.textInput}
           value={message}
           onChangeText={text => setMessage(text)}
           variant="inline"
@@ -133,6 +134,9 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     marginBottom: 16,
     marginTop: 16,
+  },
+  textInput: {
+    flex: 1,
   },
 });
 
