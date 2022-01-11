@@ -5,7 +5,7 @@ import action, { TAction, TResponse } from '../actions/registerUser';
 
 const { request, success, failure, cancel } = action;
 
-const data = createReducer<TResponse | null, TAction>({ id: 123 })
+const data = createReducer<TResponse | null, TAction>(null)
   .handleAction([success], (_state, { payload }) => payload)
   .handleAction([failure, cancel], () => null);
 

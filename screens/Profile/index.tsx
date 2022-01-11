@@ -6,7 +6,7 @@ import { registerUser } from '../../packages/selectors';
 
 type Props = ReturnType<typeof mapStateToProps>;
 
-const ProfileScreen = ({ user }: Props) => <Text>Profile {user?.id}</Text>;
+const ProfileScreen = ({ user }: Props) => <Text>Profile {user?.email}</Text>;
 
 const mapStateToProps = (state: any) => ({ user: registerUser(state).data });
 
