@@ -35,7 +35,11 @@ const TopBarNavigator = () => (
       tabBarLabelStyle: styles.tabBarLabelStyle,
     }}>
     <Tab.Screen name="Chat" component={ChatScreen} />
-    <Tab.Screen name="Profile" component={ProfileScreen} />
+    <Tab.Screen
+      name="Profile"
+      component={ProfileScreen}
+      options={{ title: 'Cuenta' }}
+    />
   </Tab.Navigator>
 );
 
@@ -44,6 +48,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
     fontFamily: 'System',
+    textTransform: 'capitalize',
   },
   tabBarIndicatorStyle: { backgroundColor: '#FF8755', height: 5 },
 });
