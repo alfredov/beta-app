@@ -1,0 +1,37 @@
+{
+  "name": "@bits-x/redux-setup",
+  "version": "1.0.1",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "src/index.ts",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "version": "yarn version",
+    "publish:stable": "npm publish --tolerate-republish --access public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0"
+  },
+  "sideEffects": false,
+  "homepage": "https://random-ui.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfredov/beta-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alfredov/beta-app/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "redux": "^4.1.1",
+    "redux-observable": "^1.2.0",
+    "rxjs": "^6.6.3",
+    "typesafe-actions": "^5.1.0"
+  }
+}
