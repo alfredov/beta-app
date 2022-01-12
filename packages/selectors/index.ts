@@ -4,3 +4,6 @@ export const registerUser = (state: RootState) =>
   state[REDUCER_INDEX].registerUser;
 
 export const logoutUser = (state: RootState) => state[REDUCER_INDEX].logoutUser;
+
+export const fetchMessages = (state: RootState) =>
+  state[REDUCER_INDEX].fetchMessages;

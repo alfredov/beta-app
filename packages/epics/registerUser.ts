@@ -13,7 +13,7 @@ export default (action$: ActionsObservable<TAction>) =>
     switchMap(({ payload }) => {
       const jsonValue = JSON.stringify(payload);
       return from(AsyncStorage.setItem('@user', jsonValue)).pipe(
-        mergeMap(() => of(action.success(payload))),
+        mergeMap(() => of(action.success({ ...payload, messages: [] }))),
         catchError(error => of(action.failure(error.message)))
       );
     })

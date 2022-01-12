@@ -1,38 +1,32 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 import { Chat, Message } from '@bits-x/chat';
+import * as selectors from '../../packages/selectors';
+import fetchMessagesAction from '../../packages/actions/fetchMessages';
+import addMessageAction from '../../packages/actions/addMessage';
 
-const ChatScreen = () => {
-  const [messages, setMessages] = React.useState<Message[]>([
-    {
-      author: 'bot',
-      id: '1',
-      text: 'Hello fellow',
-      date: 'Juev, 30 Nov 2021',
-    },
-    {
-      author: 'bot',
-      id: '2',
-      text: 'How are you doing?',
-    },
-    {
-      author: 'user',
-      id: '3',
-      text: 'I am feeling tired 😔',
-    },
-    {
-      author: 'user',
-      id: '4',
-      text: 'Hello Bot',
-      date: 'Vier, 31 Nov 2021',
-    },
-  ]);
+type Props = ReturnType<typeof mapStateToProps> & typeof dispatchToProps;
+
+const ChatScreen = ({ fetchMessages, messages, addMessage }: Props) => {
+  React.useEffect(() => {
+    fetchMessages();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const submitHandler = (message: Message) => {
-    setMessages(state => [...state, message]);
+    addMessage(message);
   };
 
   return <Chat onSubmit={submitHandler} messages={messages} />;
 };
 
-export default ChatScreen;
+const dispatchToProps = {
+  fetchMessages: fetchMessagesAction.request,
+  addMessage: addMessageAction,
+};
+
+const mapStateToProps = (state: any) => ({
+  messages: selectors.fetchMessages(state).data,
+});
+
+export default connect(mapStateToProps, dispatchToProps)(ChatScreen);
