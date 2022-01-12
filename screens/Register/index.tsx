@@ -16,11 +16,15 @@ const RegisterScreen = ({ register, loading, user }: Props) => {
   const navigation = useNavigation();
   const [username, setUsername] = React.useState('');
   const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
 
   React.useEffect(() => {
     if (user) {
       // @ts-ignore
       navigation.navigate(HOME_SCREEN);
+      setEmail('');
+      setUsername('');
+      setPassword('');
     }
   }, [user, navigation]);
 
@@ -49,6 +53,8 @@ const RegisterScreen = ({ register, loading, user }: Props) => {
           placeholder="Correo eletrónico"
         />
         <TextInput
+          value={password}
+          onChangeText={text => setPassword(text)}
           editable={!loading}
           style={styles.textInput}
           placeholder="Contraseña"
