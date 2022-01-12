@@ -2,11 +2,13 @@ import { combineReducers } from 'redux';
 import { StateType } from 'typesafe-actions';
 
 import registerUser from './registerUser';
+import logoutUser from './logoutUser';
 
 export const REDUCER_INDEX = 'chat_app';
 
 const reducer = combineReducers({
   registerUser,
+  logoutUser,
 });
 
 export const registerReducer = (reducers: {}) => ({
