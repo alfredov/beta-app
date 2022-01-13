@@ -10,6 +10,10 @@ This project has reusable ui components to use them in another react-native proj
 - [@bits-x/text-input](https://www.npmjs.com/package/@bits-x/text-input)
 - [@bits-x/chat](https://www.npmjs.com/package/@bits-x/chat)
 
+## Requirements:
+- Node.js >= v12
+
+
 ## Run instructions for Android:
 There are 2 options:
 1) Open up `android` folder through Android Studio and Hit the Run button
