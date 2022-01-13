@@ -12,7 +12,7 @@ This project has reusable ui components to use them in another react-native proj
 
 ## Requirements:
 - [Node.js >= v12](https://nodejs.org/es/download/). We recommend to use `version 12`; We are getting some issues with versions greater than 12.
-We suggest to use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) for handling multiple node.js versions in a computer.
+__For handling multiple node.js versions in a computer, we suggest to use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating).__
 
 
 ## Pre-running, dependency installation:
