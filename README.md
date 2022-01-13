@@ -11,19 +11,25 @@ This project has reusable ui components to use them in another react-native proj
 - [@bits-x/chat](https://www.npmjs.com/package/@bits-x/chat)
 
 ## Requirements:
-- Node.js >= v12
+- Node.js >= v12. We recommend to use `version 12`; We are getting some issues with version greater than 12.
 
+
+## Pre-running, dependency installation:
+```bash
+yarn install
+```
 
 ## Run instructions for Android:
 There are 2 options:
-1) Open up `android` folder through Android Studio and Hit the Run button
-2) Have an Android emulator running, or a device connected for the run `yarn android`
+- Open up `android` folder through **Android Studio** and Hit the Run button
+Or
+- Have an Android emulator running, or a device connected for then run `yarn android`
 
 ## Run instructions for iOS:
 There are 2 ways as well:
-1) Running `yarn ios` command
-2)
+- Running `yarn ios` command
+Or
 ```bash
 $ xed -b ios
 ```
-and then, in Xcode Hit the Run button.
+and then, in **Xcode** Hit the Run button.
